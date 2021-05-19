@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Заборы</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" href="css/animate.css">
+  	<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header id = "header" class = "header">
+      <div class = "container">
+        <div class = "row fix">
+          <div class = "menu">
+            <div class = "media_pos1">
+              <div class = "col-lg-5">
+                <img alt = "" class = "logo_img" src = "img/logo.png" height="60px">
+              </div>
+              <div class = "col-lg-8">
+                <div class = "d-flex telefon">
+                  <img alt = "" class = "telef_img" src = "img/pict4.png" height="20px">
+                  <p class = "telef">+ 7 (934) 236-52-47</p>
+                </div>
+                <div class = "d-flex">
+                  <img alt = "" class = "email_img" src = "img/pict3.png" height="20px">
+                  <p class = "email">pochta@stroi-zabor.ru</p>
+                </div>
+              </div>
+            </div>
+            <div class = "col-lg-7 col-md-12" >
+              <div class = "">
+                <nav>
+                  <ul class="d-flex menu_buttons">
+                    <li>
+                      <a class="menu_item" href="#header">
+                        Главная
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu_item" href="#services_page">
+                        Услуги
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu_item" href="#culc_page">
+                        Расчет стоимости
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu_item" href="#photo_page">
+                        Галерея работ
+                      </a>
+                    </li>
+                    <li>
+                      <a class="menu_item" href="#contacts_page">
+                        Контакты
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <hr class = "hr_adress" color = "#C4C4C4">
+              <div>
+                <p class = "adress"><b>Офис в Москве: </b> &nbsp;&nbsp;ул. Преображенская 17, ТЦ “Высота”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-lg-12 d-flex">
+            <div class = "col-lg-7">
+              <p class = "main_title">УСТАНОВКА ЗАБОРОВ ДЛЯ ДАЧИ</p>
+              <p class = "second_title">Производим монтаж по всей московской области</p>
+              <button class = "call_button">Вызвать замерщика</button>
+            </div>
+            <div class = "col-lg-5 stock_block">
+              <p class = "slog">Производство и установка заборов с 2003 года</p>
+              <p class = "slog">Гарантия превыше всего</p>
+              <p class = "stock stock_mgn">АКЦИЯ!</p>
+              <p class = "stock">СКИДКА 17% НА ВСЕ ЗАБОРЫ</p>
+              <div class = "stock_bkg">
+                <p class = "stock_tit">До конца акции осталось:</p>
+                <div class = "nums d-flex justify-content-center">
+                  <div class = "num">
+                    <p id = "num1"></p>
+                    <p class = "time">дней</p>
+                  </div>
+                  <div class = "num">
+                    <p id = "num2"></p>
+                    <p class = "time">часов</p>
+                  </div>
+                  <div class = "num">
+                    <p id = "num3"></p>
+                    <p class = "time">минут</p>
+                  </div>
+                  <div class = "num">
+                    <p id = "num4"></p>
+                    <p class = "time">секунд</p>
+                  </div>
+                </div>
+                <div class = "button_buy">
+                  <button class = "buy_now">Заказать сейчас</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script>
+    var num1 = document.getElementById("num1");
+    var num2 = document.getElementById("num2");
+    var num3 = document.getElementById("num3");
+    var num4 = document.getElementById("num4");
+
+    var days = 0;
+    var hours = 0;
+    var minutes = 0;
+    var seconds = 0;
+
+    var timerSec;
+    var t = setInterval(timeSet, 50);
+    function timeSet()
+    {
+      if (days == 12){}
+      else{
+        days++;
+        num1.innerHTML = days;
+      }
+
+      if (hours == 7){}
+      else{
+        hours++;
+        num2.innerHTML = hours;
+      }
+
+      if (minutes == 34)
+      {
+        clearInterval(t);
+        timerSec = setInterval(timerSeconds, 1000);
+      }
+      else{
+        minutes++;
+        num3.innerHTML = minutes;
+      }
+
+      if (seconds == 30){}
+      else{
+        seconds++;
+        num4.innerHTML = seconds;
+      }
+    }
+
+    function timerSeconds()
+    {
+      if(seconds == 0)
+      {
+        minutes--;
+        num3.innerHTML = minutes;
+        seconds = 60;
+      }
+      seconds--;
+      num4.innerHTML = seconds;
+    }
+    </script>
+
+
+
+    <section id = "services_page" class = "services_page">
+      <div class = "container">
+        <div class = "row">
+          <div class = "col-lg-12">
+            <p class = "text_top">Заказать забор на дачу с установкой может любой
+              желающий в компании «Строй-Забор». Ограждение нужно для защиты своего
+              дома, семьи и огораживания территории, за которой находится частная
+              собственность. Также забор подчеркивает общий дизайн объекта. К его
+              выбору нужно подходить ответственно и с большим вниманием.</p>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-lg-3">
+            <p class = "services_title">Услуги</p>
+          </div>
+          <div class = "col-lg-9">
+            <p class = "services_text">В нашей компании вы можете <b>заказать строительство и
+              установку заборов</b> для дачи под ключ недорого. Высококвалифицированные специалисты
+              выполнят все монтажные работы в максимально сжатые сроки, и новый забор прослужит
+              вам не один десяток лет. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id = "statistica" class = "statistica">
+      <div class = "container">
+        <div class = "row">
+          <div class = "col-lg-6 services_border">
+            <div align = "center"><img alt = "" class = "truck" src = "img/truck.png"></div>
+            <p class = "main_services_infa">ЗАБУДЬТЕ ПРО ДОРОГУЮ ДОСТАВКУ ИЗ МОСКВЫ!</p>
+              <p class = "dop_services_infa">НАШИ СКЛАДЫ РАСПОЛОЖЕНЫ ПО ВСЕМУ ПОДМОСКОВЬЮ
+              И МЫ ПРИЕДЕМ С САМОГО БЛИЗКОГО ИЗ НИХ!</p>
+            <p class = "services_infa">Мы предлагаем <span class = "span_truck">адекватные цены на изготовление и монтаж
+              заборов</span>, так как поддерживаем прочные деловые отношения с ведущими российскими
+              производителями и закупаем материалы в больших объемах. Также мы арендуем склады в
+              нескольких регионах Подмосковья и тем самым экономим на стоимости доставки
+              материалов на объекты строительства.</p>
+          </div>
+          <div class = "col-lg-6 services_nums" align = "center">
+            <div>
+              <p class = "statistica_nums">74 512</p>
+              <p class = "statistica_txt">&#128504; довольных клиентов</p>
+            </div>
+            <div class = "md_pos d-flex justify-content-center">
+              <div class = "md_pos1">
+                <p class = "statistica_nums">18</p>
+                <p class = "statistica_txt">&#128504; лет работы</p>
+              </div>
+              <div class = "border_img">
+                <img alt = "" class = "statistica_imgs" src = "img/logo.png">
+              </div>
+              <div class = "md_pos2">
+                <p class = "statistica_nums">24/7</p>
+                <p class = "statistica_txt">&#128504; работаем<br>круглосуточно</p>
+              </div>
+            </div>
+            <div>
+              <p class = "statistica_nums">85 386</p>
+              <p class = "statistica_txt">&#128504; погонных метра<br>за 2020 год</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id = "zabori" class = "zabori">
+      <div class = "container">
+        <div class = "row">
+          <div class = "col-lg-12">
+            <p class = "our_zabori">Мы устанавливаем заборы из следующих материалов:</p>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-lg-12">
+            <div class = "d-flex">
+              <div class = "col-lg-4">
+                <div class = "img_bkg">
+                  <div onmouseover = "mouseOver1()" onmouseout = "mouseOut1()">
+                    <p id = "details1_title" class = "details_title">Подробнее</p>
+                    <div id = "details1" class = "details"></div>
+                  </div>
+                  <img id = "our_zabori_img1" alt = "" class = "our_zabori_img" src = "img/pict5.jpg">
+                </div>
+                <div class = "pos_name_rel">
+                  <p class = "stock_tit">Заборы из профнастила</p>
+                </div>
+                <div class = "button_buy pos_name">
+                  <button class = "buy_now buy_now_mrg">Заказать</button>
+                </div>
+              </div>
+              <div class = "col-lg-4">
+                <div class = "img_bkg">
+                  <div onmouseover = "mouseOver2()" onmouseout = "mouseOut2()">
+                    <p id = "details2_title" class = "details_title">Подробнее</p>
+                    <div id = "details2" class = "details"></div>
+                  </div>
+                  <img id = "our_zabori_img2" alt = "" class = "our_zabori_img" src = "img/pict7.jpg">
+                </div>
+                <div class = "pos_name_rel">
+                  <p class = "stock_tit">Заборы из штакетника</p>
+                </div>
+                <div class = "button_buy pos_name">
+                  <button class = "buy_now buy_now_mrg">Заказать</button>
+                </div>
+              </div>
+              <div class = "col-lg-4">
+                <div class = "img_bkg">
+                  <div onmouseover = "mouseOver3()" onmouseout = "mouseOut3()">
+                    <p id = "details3_title" class = "details_title">Подробнее</p>
+                    <div id = "details3" class = "details"></div>
+                  </div>
+                  <img id = "our_zabori_img3" alt = "" class = "our_zabori_img" src = "img/pict6.jpg">
+                </div>
+                <div class = "pos_name_rel">
+                  <p class = "stock_tit">Заборы из сетки-рабицы</p>
+                </div>
+                <div class = "button_buy pos_name">
+                  <button class = "buy_now buy_now_mrg">Заказать</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script>
+    var detailsTitle1 = document.getElementById("details1_title");
+    var detailsTitle2 = document.getElementById("details2_title");
+    var detailsTitle3 = document.getElementById("details3_title");
+
+    var details1 = document.getElementById("details1");
+    var details2 = document.getElementById("details2");
+    var details3 = document.getElementById("details3");
+
+
+    detailsTitle1.style.opacity = "0%";
+    detailsTitle2.style.opacity = "0%";
+    detailsTitle3.style.opacity = "0%";
+
+    details1.style.opacity = "0%";
+    details2.style.opacity = "0%";
+    details3.style.opacity = "0%";
+
+    function mouseOver1()
+    {
+      detailsTitle1.style.opacity = "100%";
+      details1.style.opacity = "60%";
+    }
+    function mouseOver2()
+    {
+      detailsTitle2.style.opacity = "100%";
+      details2.style.opacity = "60%";
+    }
+    function mouseOver3()
+    {
+      detailsTitle3.style.opacity = "100%";
+      details3.style.opacity = "60%";
+    }
+
+
+    function mouseOut1()
+    {
+      detailsTitle1.style.opacity = "0%";
+      details1.style.opacity = "0%";
+    }
+    function mouseOut2()
+    {
+      detailsTitle2.style.opacity = "0%";
+      details2.style.opacity = "0%";
+    }
+    function mouseOut3()
+    {
+      detailsTitle3.style.opacity = "0%";
+      details3.style.opacity = "0%";
+    }
+    </script>
+
+
+    <section id = "culc_page" class = "culc_page">
+      <div class = "container">
+        <div class = "row">
+          <div class = "col-lg-12" align = "center">
+            <p class = "services_title">Калькулятор</p>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-lg-12 d-flex">
+            <img alt = "" class = "culc_img" src = "img/culc.png">
+            <p class = "culc_title">Рассчитать стоимость забора онлайн</p>
+          </div>
+        </div>
+        <div class = "row calculator">
+          <div class = "col-lg-12 culc_position">
+            <div class = "col-lg-6 col-md-12 d-block">
+              <form name = "culcForm">
+                <div class = "item d-flex">
+                  <p class = "culc_items">Введите длину забора: </p>
+                  <input type = "number" id = "fst_pos" class = "fst_pos" />
+                </div>
+                <div class = "item d-flex">
+                  <p class = "culc_items">Выберите материал забора: </p>
+                  <div class = "scd_pos">
+                    <select name = "material">
+                      <option value = "0">-</option>
+                      <option value = "1.5">Профнастил</option>
+                      <option value = "1.8">Штакетник</option>
+                      <option value = "1">Сетка-рабица</option>
+                    </select>
+                  </div>
+                </div>
+                <div class = "item d-flex">
+                  <p class = "culc_items">Выберите высоту забора: </p>
+                  <div class = "thrd_pos">
+                    <select name = "zaborHeight">
+                      <option value = "0">-</option>
+                      <option value = "1.5">1,5 метра</option>
+                      <option value = "1.8">1,8 метра</option>
+                      <option value = "2">2 метра</option>
+                    </select>
+                  </div>
+                </div>
+                <div class = "item d-flex">
+                  <p class = "culc_items">Выберите ширину ворот: </p>
+                  <div class = "frth_pos">
+                    <select name = "zaborWidth">
+                      <option value = "0">-</option>
+                      <option value = "3">3 метра</option>
+                      <option value = "3.5">3,5 метра</option>
+                      <option value = "4">4 метра</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+              <div align = "center">
+                <p class = "call_button priсe" onclick = "func()">Рассчитать</p>
+                <div id = "zabori_opacity">
+                  <p class = "price_zabori">&#128504; Стоимость забора:</p>
+                </div>
+                <p id = "result" class = "result"></p>
+              </div>
+            </div>
+            <div class = "col-lg-6 col-md-12 culc_txt">
+              <p><big><b>Воспользуйтесь нашим калькулятором и узнайте примерную стоимость
+                установки забора на вашем участке.</b></big></p><br>
+              <p>Вы можете рассчитать стоимость будущего забора на вашей даче с
+                установкой «под ключ» исходя из материала изготовления, метража, высоты.
+                При необходимости на помощь придут грамотные консультанты.<br>
+                Связаться с нами можно по контактному телефону:<br><b>+ 7 (934) 236-52-47</b><br>или
+                написав письмо на электронный адрес:<br><b>pochta@stroi-zabor.ru</b></p>
+              <p><small>** В стоимость входят услуги по установке  забора и материалы.</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+    var zaboriOpacity = document.getElementById("zabori_opacity");
+    zaboriOpacity.style.opacity = "0%";
+
+    var materialValue = culcForm.material;
+    var zaborHeightValue = culcForm.zaborHeight;
+    var zaborWidthValue = culcForm.zaborWidth;
+
+    function func() {
+      var resultValue = document.getElementById("result");
+
+      var fst_posValue = Number(document.getElementById("fst_pos").value);
+      var selectOptionMaterial = materialValue.options[materialValue.selectedIndex].value;
+      var selectOptionHeight = zaborHeightValue.options[zaborHeightValue.selectedIndex].value;
+      var selectOptionWidth = zaborWidthValue.options[zaborWidthValue.selectedIndex].value;
+
+      zaboriOpacity.style.opacity = "100%";
+      resultValue.innerHTML = parseInt(1000 * ((fst_posValue * selectOptionMaterial * selectOptionHeight) + (selectOptionMaterial * selectOptionWidth * selectOptionHeight))) + " &#8381;";
+    }
+
+    </script>
+
+    <section id = "photo_page" class = "photo_page">
+      <div class = "container">
+        <div class = "row">
+          <div class = "col-lg-12">
+            <p class = "services_title" align = "center">Фото наших заборов</p>
+            <p><br>Забор – это своего рода «лицо» здания. По его состоянию окружающие
+              могут судить о многом, вплоть до характера человека, проживающего в
+              конкретном доме. Небрежно установленный, покосившийся забор, когда-то
+              наспех возведенный строителями и до сих пор не замененный ни на что более
+              приличное, смотрится отталкивающе, особенно если сам коттедж выглядит
+              эстетично. И наоборот, аккуратное, пусть даже не самое дорогое, но
+              стильное ограждение выгодно оттенит самое скромное жилое здание.<br><br></p>
+          </div>
+        </div>
+        <div class = "row" align = "center">
+          <div class = "col-lg-3 col-md-6 col-sm-6">
+            <img alt = "" class = "zabori_photo" src = "img/zabor1.jpg">
+          </div>
+          <div class = "col-lg-3 col-md-6 col-sm-6">
+            <img alt = "" class = "zabori_photo" src = "img/zabor2.jpg">
+          </div>
+          <div class = "col-lg-3 col-md-6 col-sm-6">
+            <img alt = "" class = "zabori_photo" src = "img/zabor3.jpg">
+          </div>
+          <div class = "col-lg-3 col-md-6 col-sm-6">
+            <img alt = "" class = "zabori_photo" src = "img/zabor4.jpg">
+          </div>
+        </div>
+        <div class = "row" align = "center">
+          <div class = "col-lg-3 col-md-6 col-sm-6">
+            <img alt = "" class = "zabori_photo" src = "img/zabor5.jpg">
+          </div>
+          <div class = "col-lg-3 col-md-6 col-sm-6">
+            <img alt = "" class = "zabori_photo" src = "img/zabor6.jpg">
+          </div>
+          <div class = "col-lg-3 col-md-6 col-sm-6">
+            <img alt = "" class = "zabori_photo" src = "img/zabor7.jpg">
+          </div>
+          <div class = "col-lg-3 col-md-6 col-sm-6">
+            <img alt = "" class = "zabori_photo" src = "img/zabor8.png">
+          </div>
+        </div>
+        <div class = "row" align = "center">
+          <div class = "col-lg-3 col-md-6 col-sm-6">
+            <img alt = "" class = "zabori_photo" src = "img/zabor9.jpg">
+          </div>
+          <div class = "col-lg-3 col-md-6 col-sm-6">
+            <img alt = "" class = "zabori_photo" src = "img/zabor10.jpg">
+          </div>
+          <div class = "col-lg-3 col-md-6 col-sm-6">
+            <img alt = "" class = "zabori_photo" src = "img/zabor11.jpg">
+          </div>
+          <div class = "col-lg-3 col-md-6 col-sm-6">
+            <img alt = "" class = "zabori_photo" src = "img/zabor12.jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id = "contacts_page" class = "contacts_page">
+      <div class = "container">
+        <div class = "row">
+          <div class = "col-lg-4">
+            <p class = "services_title mt-4">Контакты</p>
+          </div>
+          <div class = "col-lg-8">
+            <p class = "services_text">
+            <big>+ 7 (934) 236-52-47</big><br>
+            <big>pochta@stroi-zabor.ru</big><br><br>
+            <b>Офис в Москве: </b> ул. Преображенская 17, ТЦ “Высота”</p>
+          </div>
+        </div>
+        <br>
+        <div class = "row contacts_map">
+          <div class = "col-lg-3 col-md-4">
+            <br>
+            <p class = "contacts_txt">
+            <b>График работы:</b><br>
+            Понедельник: 8.00 - 20.00<br>
+            Вторник: 8.00 - 20.00<br>
+            Среда: 8.00 - 20.00<br>
+            Четверг: 8.00 - 20.00<br>
+            Пятница: 8.00 - 18.00<br>
+            Суббота: Выходной<br>
+            Воскресенье: Выходной<br><br>
+            <big>Без перерывов на обед!</big><br><br>
+            </p>
+          </div>
+          <div class = "col-lg-9 map1" align = "right">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A82ca58b4186e26c5ad12c99e75763e33ef78eb2fb455efef9a64817ba4d665d4&amp;width=800&amp;height=326&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
+          <div class = "col-lg-9 map2" align = "right">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A82ca58b4186e26c5ad12c99e75763e33ef78eb2fb455efef9a64817ba4d665d4&amp;width=600&amp;height=326&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
+          <div class = "col-md-8 map3" align = "right">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A82ca58b4186e26c5ad12c99e75763e33ef78eb2fb455efef9a64817ba4d665d4&amp;width=400&amp;height=326&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id = "footer" class = "footer">
+      <div class = "container">
+        <div class = "row">
+          <div class = "col-lg-3 col-md-6">
+            <p class = "footer_text">
+            <b><big>ООО"СТРОЙ-ЗАБОР"</big></b><br></p>
+            <p class = "footer_text_dop">
+            Гарантия превыше всего!<br>
+            Производство и установка заборов с 2003 года</p><br>
+            <button class = "buy_now but_footer">Обратный звонок</button>
+          </div>
+          <div class = "col-lg-3 col-md-6">
+            <p class = "footer_text">
+            <ins><b><big>О НАС</big></b></ins><br>
+            ГЛАВНАЯ<br>
+            УСЛУГИ<br>
+            РАССЧИТАТЬ СТОИМОСТЬ<br>
+            ГАЛЕРЕЯ РАБОТ<br>
+            КОНТАКТЫ<br></p>
+          </div>
+          <div class = "col-lg-3 col-md-6">
+            <p class = "footer_text">
+            <ins><b><big>ИНФОРМАЦИЯ</big></b></ins><br>
+            РАССРОЧКА и КРЕДИТ<br>
+            ПРАЙС-ЛИСТ<br>
+            ОТЗЫВЫ<br>
+            ДИЛЕРЫ<br>
+            НАШИ ЗАБОРЫ<br></p>
+          </div>
+          <div class = "col-lg-3 col-md-6">
+            <p class = "footer_text">
+            <ins><b><big>КОНТАКТЫ</big></b></ins><br>
+            <big>+ 7 (934) 236-52-47</big><br>
+            <big>pochta@stroi-zabor.ru</big><br></p>
+            <p class = "footer_text_dop">
+            Наши строительные бригады работают без выходных и праздничных дней!</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

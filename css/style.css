@@ -1,0 +1,620 @@
+html {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+  background: #E1E1E1;
+}
+
+header {
+  background: no-repeat url(../img/pict11.jpg) fixed center top/cover;
+  height: 510px;
+}
+
+.fix {
+  max-width: 1500px;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #d8d8d8;
+  box-shadow: 0 3px 3px #d8d8d8;
+  z-index: 5;
+}
+
+.menu {
+  width: 1500px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.media_pos1 {
+  display: flex;
+}
+
+.telefon {
+  margin: 10px 0 0 0;
+}
+
+.telef {
+  font-size: 18px;
+  color: #868686;
+  margin: 0;
+}
+
+.telef_img {
+  margin: 3px 10px 0 0;
+  opacity: 55%;
+}
+
+.email {
+  font-size: 16px;
+  color: #868686;
+  margin: 3px 0 0 0;
+}
+
+.email_img {
+  margin: 6px 10px 0 0;
+  opacity: 55%;
+}
+
+ul, li {
+	display: block;
+}
+
+.menu_buttons {
+  justify-content: flex-end;
+  margin: 7px 0 7px 0;
+}
+
+.menu_item {
+	color: #C70000;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 15px 3px 15px;
+}
+
+.menu_item:hover {
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(to top, #319900, #41C702);
+  border-radius: 3px;
+}
+
+.adress {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  text-align: right;
+}
+
+.hr_adress {
+  margin: 3px;
+  margin-left: 70px;
+  width: 90%;
+}
+
+.logo_img {
+  margin-top: 7px;
+}
+
+
+/*Главная*/
+.call_button {
+  font-weight: 700;
+  font-size: 18px;
+  padding: 5px 25px 7px 25px;
+  color: #fff;
+  background: linear-gradient(to top, #319900, #41C702);
+  border-radius: 4px;
+  border: none;
+  margin-top: 40px;
+  margin-left: 100px;
+}
+
+.call_button:hover {
+  background: linear-gradient(to top, #41C702, #319900);
+  box-shadow: 0 0 6px #fff;
+}
+
+.call_button:focus {
+  outline: none;
+  box-shadow: 0 0 10px #fff;
+}
+
+.main_title {
+  color: #fff;
+  font-weight: 900;
+  font-size: 50px;
+  margin-top: 150px;
+}
+
+.second_title {
+  font-size: 18px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.stock_block {
+  margin-top: 80px;
+}
+
+.slog {
+  color: #fff;
+  text-align: right;
+  margin: 0;
+  font-size: 11px;
+}
+
+.stock {
+  color: #9CFF6D;
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+}
+
+.stock_mgn {
+  margin-top: 100px;
+}
+
+.stock_bkg {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #fff;
+  height: 200px;
+}
+
+.stock_tit {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.num {
+  text-align: center;
+  margin: 0 7px 0 7px;
+  height: 60px;
+  width: 60px;
+  font-weight: 500;
+  font-size: 36px;
+  background: linear-gradient(to top, #C4C4C4, #f2f2f2);
+}
+
+.time {
+  font-size: 13px;
+  margin-top: -7px;
+}
+
+.buy_now {
+  font-weight: 600;
+  font-size: 15px;
+  padding: 3px 22px 5px 22px;
+  color: #fff;
+  background: linear-gradient(to top, #660000, #FF0000);
+  border-radius: 4px;
+  border: none;
+  margin: 35px 0 0 0;
+}
+
+.buy_now:hover {
+  background: linear-gradient(to top, #FF0000, #660000);
+  box-shadow: 0 0 10px #fff;
+}
+
+.buy_now:focus {
+  outline: none;
+  box-shadow: 0 0 10px #fff;
+}
+
+.button_buy {
+  text-align: center;
+}
+
+
+
+
+/*Услуги*/
+.text_top {
+  margin-top: 40px;
+  font-weight: 600;
+  color: #868686;
+}
+
+.services_title {
+  font-weight: 900;
+  font-size: 72px;
+  background: #319900;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 15px;
+}
+
+.services_text {
+  border-left: 5px solid #319900;
+  font-weight: 100px;
+  padding: 5px 15px 5px 15px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.statistica {
+  margin-top: 100px;
+  background: #EBFFE1;
+  padding: 40px 40px 40px 40px;
+}
+
+.services_border {
+  box-shadow: 1px 1px 6px #A4C695;
+  padding: 30px 50px 80px 50px;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.truck {
+  height: 80px;
+  opacity: 70%;
+}
+
+.span_truck {
+  font-weight: 600;
+}
+
+.main_services_infa {
+  color: #C70000;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.dop_services_infa {
+  color: #319900;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.services_infa {
+  font-weight: 100;
+}
+
+.statistica_nums {
+  margin: 0;
+  font-weight: 700;
+  font-size: 46px;
+  color: #C70000;
+}
+
+.statistica_txt {
+  margin-top: -15px;
+}
+
+.statistica_imgs {
+  height: 70px;
+  margin: 57px 33px 57px 33px;
+}
+
+.border_img {
+  border-radius: 50%;
+  border: 1px solid #319900;
+}
+
+.md_pos {
+  margin-left: 30px;
+}
+
+.md_pos1 {
+  margin: 15px;
+  margin-top: 40px;
+}
+
+.md_pos2 {
+  margin: 15px;
+  margin-top: 28px;
+}
+
+.img_bkg{
+  position: relative;
+  margin-left: 20px;
+}
+
+.details {
+  position: absolute;
+  height: 250px;
+  width: 310px;
+  background: #000B6C;
+  z-index: 2;
+}
+
+.zabori {
+  background: #D1FFBC;
+  padding: 30px 40px 30px 40px;
+}
+
+.our_zabori {
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 30px;
+}
+
+.details_title {
+  margin: 110px 0 0 85px;
+  position: absolute;
+  font-size: 18px;
+  border: 1px solid #fff;
+  padding: 5px 20px 7px 20px;
+  color: #fff;
+  z-index: 3;
+}
+
+.our_zabori_img {
+  position: absolute;
+  height: 250px;
+  width: 310px;
+}
+
+.buy_now_mrg {
+  margin: 0;
+}
+
+.pos_name_rel {
+  margin-top: 255px;
+}
+
+.pos_name {
+  position: relative;
+}
+
+/*Калькулятор*/
+.culc_page {
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.item {
+  margin-bottom: 19px;
+}
+
+.fst_pos {
+  height: 30px;
+}
+
+.culc_img {
+  height: 50px;
+  margin-left: 15px;
+  opacity: 70%;
+}
+
+.culc_title {
+  font-size: 35px;
+  font-weight: 400;
+  margin-left: 20px;
+  opacity: 70%;
+}
+
+.calculator {
+  margin-top: 50px;
+}
+
+.culc_txt {
+  border-left: 5px solid #319900;
+  padding-left: 40px;
+}
+
+.fst_pos, .scd_pos, .thrd_pos, .frth_pos {
+  margin-left: 20px;
+}
+
+.culc_items {
+  font-size: 19px;
+  font-weight: 100;
+}
+
+.culc_position {
+  display: flex;
+}
+
+.priсe {
+  margin-left: 0;
+  width: 300px;
+}
+
+.result {
+  font-size: 40px;
+  font-weight: 600;
+  color: #C70000;
+}
+
+.price_zabori {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+
+/*Галерея*/
+.photo_page {
+  margin-top: 100px;
+}
+
+.zabori_photo {
+  height: 200px;
+  padding: 3px;
+  margin-bottom: 40px;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+.zabori_photo:hover {
+  opacity: 70%;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+
+/*Контакты*/
+.contacts_page {
+  margin-top: 80px;
+  background: #D1FFBC;
+  padding: 30px 40px 50px 40px;
+}
+
+.contacts_map {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  padding: 10px 0 10px 0;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.map2 {
+  display: none;
+}
+.map3 {
+  display: none;
+}
+
+
+/*Подвал*/
+.footer {
+  background: #303030;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.footer_text_dop {
+  color: #777777;
+  font-size: 11px;
+}
+
+.footer_text {
+  color: #777777;
+}
+
+.but_footer {
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+/*Медиа-запросы*/
+@media screen and (max-width: 1220px) {
+  .menu_item {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0 10px 3px 10px;
+  }
+    .hr_adress {
+      margin: 3px;
+      margin-left: 170px;
+      width: 70%;
+    }
+    .services_title {
+      font-weight: 900;
+      font-size: 55px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+  .main_title {
+    font-weight: 900;
+    font-size: 40px;
+  }
+  .map1 {
+    display: none;
+  }
+  .map2 {
+    display: block;
+  }
+
+  .zabori_photo {
+    height: 170px;
+  }
+
+  .img_bkg {
+    margin-left: 10px;
+  }
+  .our_zabori_img {
+    height: 200px;
+    width: 250px;
+  }
+  .details {
+    height: 200px;
+    width: 250px;
+  }
+  .details_title {
+    margin: 80px 0 0 60px;
+  }
+  .pos_name_rel {
+    margin-top: 220px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .menu {
+    display: block;
+  }
+  .media_pos1 {
+    display: flex;
+  }
+  .menu_buttons {
+    justify-content: center;
+  }
+  .menu_item {
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 20px 3px 20px;
+  }
+  .fix {
+    position: absolute;
+  }
+  .call_button {
+    margin-left: 0;
+  }
+  .main_title {
+    font-weight: 900;
+    font-size: 35px;
+  }
+  .second_title {
+    font-size: 16px;
+  }
+  .stock {
+    font-size: 20px;
+  }
+  .services_nums {
+    margin-top: 40px;
+  }
+  .statistica {
+    margin-top: 0;
+  }
+  .img_bkg {
+    margin-left: 10px;
+  }
+  .our_zabori_img {
+    height: 150px;
+    width: 190px;
+  }
+  .details {
+    height: 150px;
+    width: 190px;
+  }
+  .details_title {
+    margin: 60px 0 0 27px;
+  }
+  .pos_name_rel {
+    margin-top: 160px;
+  }
+  .culc_position {
+    display: block;
+  }
+  .zabori_photo {
+    height: 250px;
+  }
+  .map2 {
+    display: none;
+  }
+  .map3 {
+    display: block;
+  }
+  .contacts_txt {
+    font-size: 14px;
+  }
+}
